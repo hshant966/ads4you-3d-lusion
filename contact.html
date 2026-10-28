@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Ads4You</title>
+<meta name="description" content="Book an intake call. Tell us the three things you hate doing every week and we will tell you honestly whether we can set them up.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231a2ffb'/><text x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' fill='%23fff' text-anchor='middle'>A</text></svg>">
+<script type="importmap">
+{ "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav__mark" href="index.html">Ads4You</a>
+  <div class="nav__links">
+    <a href="services.html">Services</a>
+    <a href="process.html">Process</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+    <a class="nav__cta" href="contact.html">Let's talk</a>
+  </div>
+  <button class="nav__burger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav__sheet">
+  <a href="services.html">Services</a>
+  <a href="process.html">Process</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="section shell pagehead">
+  <div class="grid" style="align-items:end;row-gap:clamp(18px,3vw,40px)">
+    <div style="grid-column:1/8" data-reveal>
+      <p class="t-label" style="margin-bottom:1.1rem">Contact</p>
+      <h1 class="t-h1 pagehead__t">Tell us what you hate doing every week.</h1>
+    </div>
+    <div style="grid-column:9/13" data-reveal data-reveal-delay="2">
+      <p class="t-lead">One call decides whether this is worth doing for you. If it is not, we will tell you on the call and point you somewhere better.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section shell" style="padding-top:0">
+  <div class="grid" style="row-gap:clamp(30px,4vw,56px);align-items:start">
+    <div style="grid-column:1/7" data-reveal>
+      <form id="enquiry" class="stack-lg" novalidate>
+        <div class="form__row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Prashant Handge" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="role">What do you run</label>
+          <select id="role" name="role">
+            <option>Solo founder or consultant</option>
+            <option>Small agency or service team (2&ndash;15)</option>
+            <option>D2C or local business</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">The three things you would rather not do</label>
+          <textarea id="message" name="message" placeholder="e.g. chase invoices, write Monday reports, follow up on quote requests"></textarea>
+        </div>
+        <div style="display:flex;gap:.8rem;align-items:center;flex-wrap:wrap">
+          <button class="btn btn--solid" type="submit">Send it <span class="btn__arrow">→</span></button>
+          <span class="t-body" style="font-size:.85rem">Or email <a href="mailto:ads4you@zohomail.com" style="color:var(--color-green)">ads4you@zohomail.com</a></span>
+        </div>
+        <p id="form-ok" class="t-body" hidden style="color:var(--color-green)"></p>
+      </form>
+    </div>
+
+    <div style="grid-column:8/13" data-reveal data-reveal-delay="2">
+      <div class="panel panel--tall">
+        <span class="panel__tag"><i></i> Say hello</span>
+        <canvas data-scene data-count="14" data-camera-z="7" data-bg="060810" aria-label="3D contact scene"></canvas>
+        <div class="panel__foot"><span>Pune, India &middot; replies within one working day</span><span>WebGL</span></div>
+      </div>
+      <div class="stats" style="margin-top:1rem;grid-template-columns:1fr 1fr">
+        <div class="stat"><span class="stat__l">General enquiries</span><span style="font-size:1.05rem">ads4you@zohomail.com</span></div>
+        <div class="stat"><span class="stat__l">Based in</span><span style="font-size:1.05rem">Pune, India</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="shell">
+    <div class="foot__grid">
+      <div>
+        <div style="font-size:1.2rem;font-weight:600;letter-spacing:-.03em">Ads4You</div>
+        <p class="t-body" style="margin-top:.9rem;max-width:30ch">Private AI agents for solo founders and small teams. Built in Pune, deployed wherever you work.</p>
+      </div>
+      <div>
+        <div class="foot__h">Pages</div>
+        <ul class="foot__list">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot__h">What we install</div>
+        <ul class="foot__list">
+          <li><a href="services.html#server">Hardened server</a></li>
+          <li><a href="services.html#channel">Agent &amp; channel</a></li>
+          <li><a href="services.html#workflows">Three workflows</a></li>
+          <li><a href="services.html#handover">Handover</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot__h">Enquiries</div>
+        <ul class="foot__list">
+          <li><a href="mailto:ads4you@zohomail.com">ads4you@zohomail.com</a></li>
+        </ul>
+        <a class="btn btn--solid" style="margin-top:1.2rem" href="contact.html">Book a call <span class="btn__arrow">→</span></a>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© <span data-year>2026</span> Ads4You. All rights reserved.</span>
+      <span>Built with WebGL · No trackers · No forms sent to third parties</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
